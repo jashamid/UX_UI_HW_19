@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    }
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+    }
+    .loader:before, .loader:after {
+        content: '';
+        border: 1em solid #092C4C;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s linear infinite;
+        opacity: 0;
+        }
+    
+        .loader:before {
+            animation-delay: .5s;
+        }
+        @keyframes loader{
+            0%{
+                transform:scale(0);
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    
+
+  
+
+  
+li {
+    cursor: pointer;
+    font-family: "Chivo", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4A5567;
+    text-decoration: none;
+}
+header {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 20px;
+    margin-right: auto;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 0;
+    width: 25%;
+    padding: 1%;
+}
+
+.navitems { 
+    list-style: none;
+}
+
+.navitems li {
+    width: 75%;
+    padding: 0px 20px;
+    margin-right: auto;
+}
+
+.navitems li{
+    transition: all 0.3s ease 0s;
+}
+
+.navitems li:hover {
+    color: #092C4C;
+}
+
+#hero {
+    width: 100%;
+    height: 60vh;
+}
+
+.heroimg {
+   width: 90%;
+   height: 100%;
+   max-width: 1200px;
+   align-items: top;
+   justify-content: left;
+   padding: 5% 5%;
+}
+
+.herocontainer {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+
+}
+
+.jobtitle {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+}
+.jobtitle p {
+    margin-bottom: 0px;
+    font-size: 18;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Chivo';
+    
+    text-transform: uppercase;
+
+}
+.herocontainer h1 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Chivo';
+    text-transform: uppercase;
+    color: #757575;
+}
+
+.herocontainer p {
+    margin-bottom: 20px;
+    font-size: 16;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Chivo';
+    text-transform: uppercase;
+}
+
+button  {
+    background-color: #092C4C; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
+.bluebanner {
+    width: 100%;
+    height: auto;
+    background-color: #092C4C;
+    padding: 50px 10%;
+    
+}
+
+.banner {
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bannercontainer {
+    justify-content: flex-end;
+    align-items: center;
+    padding:  5%;
+}
+
+.bannercontainer h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Chivo';
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannercontainer p {
+    margin-bottom: 10px;
+    font-size: 18;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: Merriweather Sans;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading {
+   align-items: top;
+   justify-content: left;
+   height: 100px;
+   padding: 5%;
+   padding-top: 50px;
+
+}
+
+
+.heading h1 {
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Chivo';
+    text-transform: uppercase;
+}
+
+.heading p {
+    margin-bottom: 5px;
+    font-size: 12;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: chivo;
+    text-transform: uppercase;
+    color: #757575
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax (auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+.text-header {
+    font-family: 'chivo', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.text-medium {
+    font-family: 'chivo', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+    padding-top: 50px;
+}
+
+.card {
+    grid-column-end: span 6;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease 0s
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+.card_image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card_image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card_title {
+    margin-bottom: 20px;
+}
+
+.card_info{
+    align-items: center;
+}
+
+@media only screen and (max-width:1000px) {
+    .card {
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        grid-gap: 20px;
+    }
+    .card {
+        grid-column-end: span 12;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        grid-template-columns: 10px repeat( 6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cards {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .card {
+        grid-column-end: span 6;
+    }
+}
+
+
+footer {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+.footerlogo {
+    cursor: pointer;
+    margin-left: 0;
+    width: 20%;
+    padding: 1%;
+}
+
+.contact { 
+    list-style: none;
+}
+
+.contactme li {
+    display: inline-block;
+    cursor: pointer;
+    width: 30%;
+    margin: 10px;
+
+}
